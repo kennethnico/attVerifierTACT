@@ -41,13 +41,13 @@ function insertaValor($conn,$nom,$mail,$dater,$loc,$table){
         $sql->bindParam(':location', $loc);
         $sql->execute();
         echo '<div class="img-form">
-                    <img src="./assets/logos/imgFJD_1.png" alt="IMG">
+                    <img src="./assets/logos/right_img.png" alt="IMG">
                </div>
                <span class="login100-form-title">Se ha registrado su asistencia con éxito.</span>';
 
     }else{
         echo '<div class="img-form">
-                    <img src="./assets/logos/imgFJD_1.png" alt="IMG">
+                    <img src="./assets/logos/right_img.png" alt="IMG">
                </div>
                <span class="login100-form-title">Tu asistencia ha sido registrada con anterioridad. Gracias.</span>';
     }

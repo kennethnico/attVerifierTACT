@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->
-    <link rel="icon" type="image/png" href="./assets/logos/isoooom.png"/>
+    <link rel="icon" type="image/png" href="./assets/logos/ico.png"/>
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
     <!--===============================================================================================-->
@@ -30,12 +30,12 @@
     <div class="container-login100">
         <div class="wrap-login100">
             <div class="login100-pic js-tilt" style="align-items: center;" data-tilt>
-                <img src="./assets/logos/imgFJD_1.png" alt="IMG">
+                <img src="./assets/logos/left_img.png" alt="IMG">
             </div>
 
             <form class="login100-form validate-form" id="testeo" method="post" name="checker" action="" onsubmit="enviarDatosAsistente(); return false;">
                 <div class="img-form">
-                    <img src="./assets/logos/imgFJD_2.png" alt="IMG">
+                    <img src="./assets/logos/right_img.png" alt="IMG">
                 </div>
                 <span class="login100-form-title">Bienvenido</span>
                 <div style="justify-content: center; text-align: center; color: var(--primary-color);" class="m-b-20"><small style="justify-self: center;">Para registrar tu asistencia, proporciona los siguientes datos: <br> </small></div>
@@ -52,6 +52,13 @@
                     <span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
 						</span>
+                </div>
+                <div class="wrap-input100 validate-input" data-validate = "Valor requerido.">
+                    <input class="input100" type="text" name="ads" placeholder="Adscripción">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+							<i class="fa fa-building" aria-hidden="true"></i>
+                    </span>
                 </div>
                 <div class="wrap-input100 validate-input" data-validate = "Valor requerido">
                     <p hidden>Su ubicación:  <span id="latitud"></span> / <span id="longitud"></span></p>

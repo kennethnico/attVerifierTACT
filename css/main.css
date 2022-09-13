@@ -1,11 +1,11 @@
 :root{
-    --primary-color: #1c2c34;
-    --primary-color-soft: #6c5484;
-    --primary-color-soft-two: #a494b4;
-    --secondary-color: #74c39c;
-    --secondary-color-soft: #74c39c;
+    --primary-color: #099;
+    /*--primary-color-soft: #6c5484;
+    --primary-color-soft-two: #a494b4;*/
+    --secondary-color: #bc955c;
+    /*--secondary-color-soft: #009999;*/
     --gray-color: #b1bab8;
-    --gray-second: #999999;
+    --gray-second: #adc1bc;
     --color-comite: #70857f;
     --color-rgba: rgba(116,195,156,0.4);
 }
@@ -176,10 +176,10 @@ iframe {
     align-items: center;
     padding: 15px;
     background: #74c39c;
-    background: -webkit-linear-gradient(-135deg, #74c39c, #1c2c34);
-    background: -o-linear-gradient(-135deg, #74c39c, #1c2c34);
-    background: -moz-linear-gradient(-135deg, #74c39c, #1c2c34);
-    background: linear-gradient(-135deg, #74c39c, #1c2c34);
+    background: -webkit-linear-gradient(-135deg, var(--primary-color), var(--secondary-color));
+    background: -o-linear-gradient(-135deg, var(--primary-color), var(--secondary-color));
+    background: -moz-linear-gradient(-135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(-135deg, var(--primary-color), var(--secondary-color));
 }
 
 .wrap-login100 {
@@ -229,7 +229,6 @@ iframe {
     color: var(--secondary-color);
     line-height: 1.2;
     text-align: center;
-
     width: 100%;
     display: block;
     padding-bottom: 20px;
@@ -248,8 +247,7 @@ iframe {
     font-family: Poppins-Medium;
     font-size: 15px;
     line-height: 1.5;
-    color: var(--gray-color);
-
+    color: var(--primary-color);
     display: block;
     width: 100%;
     background: #e6e6e6;
@@ -319,7 +317,7 @@ iframe {
 }
 
 .input100:focus + .focus-input100 + .symbol-input100 {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     padding-left: 28px;
 }
 

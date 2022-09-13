@@ -43,6 +43,6 @@ function enviarDatosAsistente(){
 function limpiarCampos(){
     document.checker.nom.value="";
     document.checker.email.value="";
-    //document.checker.loc.value="";
+    document.checker.ads.value="";
     document.checker.nom.focus();
 }

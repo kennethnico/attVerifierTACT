@@ -1,4 +1,4 @@
-# attendanceVerifierFFRD
+# attendanceVerifierTACT
 ## WebApp para verificar Asistencia al Taller de actualización sobre los servicios de colaboración interinstitucional entre la Secretaría de Relaciones Exteriores y el Poder Judicial de la Ciudad de México.
 
 - El usuario ingresa al sitio mediante el escaneo de un QR.

@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Asistencia | Feminicidio: Retos y desafíos en la impartición de justicia </title>
+    <title>Asistencia | Taller de actualización | PJCDMX SRE </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->

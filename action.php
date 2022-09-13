@@ -8,6 +8,7 @@ $dbTable = "attVerifierTACT";
 $name = utf8_decode($_POST['nnn']);
 $loc = $_POST['loca'];
 $email = $_POST['eee'];
+$adsc = $_POST['ads'];
 /**setlocale (LC_TIME, "es_MX");*/
 date_default_timezone_set('America/Mexico_City');
 $dater = date('Y-m-d H:i:s');
@@ -30,13 +31,14 @@ function validaExistencia($canal,$email,$table){
         return true;
     }
 }
-function insertaValor($conn,$nom,$mail,$dater,$loc,$table){
-    if(validaExistencia($conn,$mail)){
+function insertaValor($conn,$nom,$mail,$ads,$dater,$loc,$table){
+    if(validaExistencia($conn,$mail,$table)){
         ////////////// Insertar a la tabla la información generada /////////
-        $sql="insert into ".$table."(nombre,email,fecha,location) values(:nombre,:email,:fecha,:location)";
+        $sql="insert into ".$table."(nombre,email,adscripcion,fecha,location) values(:nombre,:email,:adscrip,:fecha,:location)";
         $sql = $conn->prepare($sql);
         $sql->bindParam(':nombre', $nom);
         $sql->bindParam(':email', $mail);
+        $sql->bindParam(':adscrip', $ads);
         $sql->bindParam(':fecha', $dater);
         $sql->bindParam(':location', $loc);
         $sql->execute();
@@ -52,5 +54,5 @@ function insertaValor($conn,$nom,$mail,$dater,$loc,$table){
                <span class="login100-form-title">Tu asistencia ha sido registrada con anterioridad. Gracias.</span>';
     }
 }
-insertaValor($conexion,$name,$email,$dater,$loc,$dbTable);
+insertaValor($conexion,$name,$email,$adsc,$dater,$loc,$dbTable);
 ?>

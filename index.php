@@ -53,8 +53,37 @@
 							<i class="fa fa-envelope" aria-hidden="true"></i>
 						</span>
                 </div>
+                <div class="wrap-input100 validate-input" data-validate = "Es necesario un dato válido">
+                    <input class="input100" type="number" name="edad" placeholder="Edad">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+							<i class="fa fa-birthday-cake" aria-hidden="true"></i>
+						</span>
+                </div>
+                <div class="wrap-input100 validate-input" data-validate = "Valor requerido.">
+                    <select class="input100" name="sex">
+                        <option disabled selected>Género</option>
+                        <option value="Femenino">F</option>
+                        <option value="Masculino">M</option>
+                    </select>
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+							<i class="fa fa-user-circle" aria-hidden="true"></i>
+                    </span>
+                </div>
                 <div class="wrap-input100 validate-input" data-validate = "Valor requerido.">
                     <input class="input100" type="text" name="ads" placeholder="Adscripción">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+							<i class="fa fa-desktop" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="wrap-input100 validate-input" data-validate = "Valor requerido.">
+                    <!--<input class="input100" type="text" name="sex" placeholder="Adscripción">-->
+                    <select class="input100" name="tyc">
+                        <option value="TSJ">TSJCDMX</option>
+                        <option value="CJ">Consejo de la Judicatura</option>
+                    </select>
                     <span class="focus-input100"></span>
                     <span class="symbol-input100">
 							<i class="fa fa-building" aria-hidden="true"></i>
